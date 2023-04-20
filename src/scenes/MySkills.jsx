@@ -26,7 +26,9 @@ const MySkills = () => {
             <LineGradient width="w-1/3" />
           </p>
           <p className="mt-10 mb-7">
-            lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            I have developed a strong skill set in HTML, CSS, Sass, JavaScript,
+            ReactJS, Styled Components/Material UI, GitHub/GitLab, Agile/Scrum,
+            and more
           </p>
         </motion.div>
 
@@ -48,7 +50,7 @@ const MySkills = () => {
       <div className="md:flex md:justify-between mt-16 gap-32">
         {/* Experience */}
         <motion.div
-          className="md:w-1/3 mt-10"
+          className="md:w-1/3 mt-20"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -67,14 +69,15 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
             <p className="mt-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              I hold a MITxPro Professional Certificate in Coding: Full Stack
+              Development with MERN (MongoBD, Express, React and NodeJS).
             </p>
           </div>
         </motion.div>
 
         {/* Innovative */}
         <motion.div
-          className="md:w-1/3 mt-10"
+          className="md:w-1/3 mt-20"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -93,14 +96,15 @@ const MySkills = () => {
             </div>
             <div className="w-1/2 md:w3/4 h-32 bg-red absolute right-0 top-0 z-[-1]" />
             <p className="mt-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              I have been successful in creating new features for applications
+              and updating existing ones, improving app performance and quality.
             </p>
           </div>
         </motion.div>
 
-        {/* Imaginative */}
+        {/* Passionate */}
         <motion.div
-          className="md:w-1/3 mt-10"
+          className="md:w-1/3 mt-20"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -112,14 +116,15 @@ const MySkills = () => {
         >
           <div className="relative h-32">
             <div className="z-10">
-              <p className="font-playfair font-semibold text-5xl">02</p>
+              <p className="font-playfair font-semibold text-5xl">03</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Imaginative
+                Passionate
               </p>
             </div>
             <div className="w-1/2 md:w3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
             <p className="mt-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              I am passionate about technology and thrive in collaborative
+              environments that challenge me to continuously learn and grow.{" "}
             </p>
           </div>
         </motion.div>

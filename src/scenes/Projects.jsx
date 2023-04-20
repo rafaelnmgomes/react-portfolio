@@ -1,5 +1,30 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+import expenseImage from "../assets/project-1.png";
+import recipesImage from "../assets/project-2.png";
+import restaurantImage from "../assets/project-3.png";
+
+const projects = [
+  {
+    title: "Expense tracker",
+    subtitle: "Expense tracker using the full MERN stack.",
+    link: "https://expense-tracker-wx1v.onrender.com",
+    image: expenseImage,
+  },
+  {
+    title: "Recipes",
+    subtitle: "React project with spoonacular API.",
+    link: "https://recipe-lake.vercel.app/",
+    image: recipesImage,
+  },
+  {
+    title: "Restaurants",
+    subtitle:
+      "MITxPRo final project using react, google auth, stripe and firebase.",
+    link: "https://rafaelgomesfullstackrestaurantapplication.vercel.app/",
+    image: restaurantImage,
+  },
+];
 
 const container = {
   hidden: {},
@@ -15,18 +40,26 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, subtitle }) => {
-  const overlayStyles = `absolute w-full h-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30
-  flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
-  const projectTitle = title.split(" ").join("-").toLowerCase();
-
+const Project = ({ title, subtitle, link, image }) => {
+  console.log("🚀 ~ file: Projects.jsx:38 ~ Project ~ image:", image);
   return (
-    <motion.div variants={projectVariant} className="relative">
-      <div className={overlayStyles}>
+    <motion.div
+      variants={projectVariant}
+      className="relative"
+      onClick={() => window.open(`${link}`, "_blank")}
+    >
+      <div
+        className="absolute w-full opacity-0 hover:opacity-90 h-full transition duration-500 bg-grey z-30
+        flex flex-col justify-center items-center text-center p-16 text-deep-blue cursor-pointer"
+      >
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">{subtitle}</p>
       </div>
-      <img scr={`../assets/${projectTitle}.jpeg`} alt={title} />
+      <img
+        className="w-[400px] h-[200px] object-fill"
+        src={image}
+        alt={title}
+      />
     </motion.div>
   );
 };
@@ -50,14 +83,10 @@ const Projects = () => {
           <p className="font-playfair font-semibold text-4xl">
             My <span className="text-red">PRO</span>JECTS
           </p>
-          <div className="flex justify-center mt-5">
+          <div className="flex justify-center mt-5 mb-5">
             <LineGradient width="w-1/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">
-          lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum
-          dolor sit amet, consectetur adipiscing elit.
-        </p>
       </motion.div>
 
       {/* Projects */}
@@ -73,12 +102,15 @@ const Projects = () => {
           <div className="flex justify-center text-center items-center p-10 bg-red max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
             BEAUTIFUL USER INTERFACES
           </div>
-          <Project title="Project 1" />
-          <Project title="Project 2" />
-
-          {/* Row 2 */}
-          <Project title="Project 3" />
-          <Project title="Project 4" />
+          {projects.map((project) => (
+            <Project
+              key={project.title}
+              title={project.title}
+              subtitle={project.subtitle}
+              link={project.link}
+              image={project.image}
+            />
+          ))}
           <div className="flex justify-center text-center items-center p-10 bg-blue max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
             SMOOTH USER EXPERIENCE
           </div>

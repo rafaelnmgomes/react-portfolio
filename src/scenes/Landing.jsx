@@ -1,7 +1,7 @@
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import profileImage from "../assets/profile-image.png";
+import profileImage from "../assets/profile-image.jpg";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const Landing = ({ setSelectedPage }) => {
@@ -52,19 +52,16 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
-            Jane {""}
+            Rafael {""}
             <span
               className="xs: relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush
              before:absolute before:-left-[25px] before:-top-[70px] before:z-[-1]"
             >
-              Esper
+              Gomes
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
-            alias optio culpa ratione, vero quo quisquam molestias sed dolor,
-            quam totam corrupti officiis nihil praesentium, recusandae aut saepe
-            atque numquam.
+            Front-End Developer with a passion for technology, cars and music.
           </p>
         </motion.div>
 

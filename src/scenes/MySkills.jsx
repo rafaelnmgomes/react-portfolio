@@ -26,9 +26,9 @@ const MySkills = () => {
             <LineGradient width="w-1/3" />
           </p>
           <p className="mt-10 mb-7">
-            Over the 2 years I have worked as a dev I have developed a strong
-            skill set in HTML, CSS, Sass, JavaScript, ReactJS, Styled
-            Components/Material UI, GitHub/GitLab, Agile/Scrum, and more
+            Over the last 2 years I have worked as a dev and I have developed a
+            strong skill set in HTML, CSS/SASS, NodeJS, JavaScript, ReactJS,
+            Styled Components/Material UI, GitHub/GitLab, Agile/Scrum, and more
           </p>
         </motion.div>
 
@@ -70,7 +70,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
             <p className="mt-10">
               I hold a MIT xPro Professional Certificate in Coding: Full Stack
-              Development with MERN (MongoBD, Express, React and NodeJS)
+              Development with MERN (MongoDB, Express, React and NodeJS)
               completed on March 2023.
             </p>
           </div>
@@ -126,7 +126,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
             <p className="mt-10">
               I am passionate about technology and thrive in collaborative
-              environments that challenge me to continuously learn and grow.{" "}
+              environments that challenge me to continuously learn and grow.
             </p>
           </div>
         </motion.div>

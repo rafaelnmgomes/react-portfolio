@@ -3,8 +3,15 @@ import { motion } from "framer-motion";
 import expenseImage from "../assets/project-1.png";
 import recipesImage from "../assets/project-2.png";
 import restaurantImage from "../assets/project-3.png";
+import socialMediaImage from "../assets/project-4.png";
 
 const projects = [
+  {
+    title: "Sociopedia",
+    subtitle: "Social media app the full MERN stack.",
+    link: "https://social-media-84yb.onrender.com",
+    image: socialMediaImage,
+  },
   {
     title: "Expense tracker",
     subtitle: "Expense tracker using the full MERN stack.",

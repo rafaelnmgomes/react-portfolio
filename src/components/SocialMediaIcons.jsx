@@ -1,5 +1,5 @@
-import linkedinLogo from "../assets/linkedin.png";
 import githubLogo from "../assets/github.png";
+import linkedinLogo from "../assets/linkedin.png";
 
 const SocialMediaIcons = () => {
   return (
@@ -14,7 +14,7 @@ const SocialMediaIcons = () => {
       </a>
       <a
         className="hover:opacity-50 transition duration-500 w-[30px] h-[30px]"
-        href="https://github.com/NoNameP"
+        href="https://github.com/rafaelnmgomes"
         target="_blank"
         rel="noreferrer"
       >

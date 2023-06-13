@@ -1,11 +1,18 @@
-import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
 import expenseImage from "../assets/project-1.png";
 import recipesImage from "../assets/project-2.png";
-import restaurantImage from "../assets/project-3.png";
 import socialMediaImage from "../assets/project-4.png";
+import carHubImage from "../assets/project-5.png";
+import LineGradient from "../components/LineGradient";
 
 const projects = [
+  {
+    title: "CarHub",
+    subtitle:
+      "Next.js project connecting with API to show cars and their details.",
+    link: "https://car-rental-nonamep.vercel.app/",
+    image: carHubImage,
+  },
   {
     title: "Sociopedia",
     subtitle: "Social media app the full MERN stack.",
@@ -23,13 +30,6 @@ const projects = [
     subtitle: "React project with spoonacular API.",
     link: "https://recipe-lake.vercel.app/",
     image: recipesImage,
-  },
-  {
-    title: "Restaurants",
-    subtitle:
-      "MITxPRo final project using react, google auth, stripe and firebase.",
-    link: "https://rafaelgomesfullstackrestaurantapplication.vercel.app/",
-    image: restaurantImage,
   },
 ];
 

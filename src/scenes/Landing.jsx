@@ -1,8 +1,8 @@
-import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import profileImage from "../assets/profile-image.jpg";
 import SocialMediaIcons from "../components/SocialMediaIcons";
+import useMediaQuery from "../hooks/useMediaQuery";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -61,7 +61,7 @@ const Landing = ({ setSelectedPage }) => {
             </span>
           </p>
           <p className="mt-10 mb-7 text-sm text-center md:text-start">
-            Front-End Developer with a passion for technology, cars and music.
+            Full Stack Developer with a passion for technology, cars and music.
           </p>
         </motion.div>
 

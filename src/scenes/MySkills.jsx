@@ -1,8 +1,8 @@
+import { motion } from "framer-motion";
 import React from "react";
+import skillsImage from "../assets/skills-image.png";
 import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
-import { motion } from "framer-motion";
-import skillsImage from "../assets/skills-image.png";
 
 const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -27,8 +27,9 @@ const MySkills = () => {
           </p>
           <p className="mt-10 mb-7">
             Over the last 2 years I have worked as a dev and I have developed a
-            strong skill set in HTML, CSS/SASS, NodeJS, JavaScript, ReactJS,
-            Styled Components/Material UI, GitHub/GitLab, Agile/Scrum, and more
+            strong skill set in HTML, CSS/SASS, NodeJS, JavaScript, ReactJS, C#,
+            .NET, API Styled Components/Material UI, GitHub/GitLab, Agile/Scrum,
+            and more
           </p>
         </motion.div>
 
@@ -70,8 +71,7 @@ const MySkills = () => {
             <div className="w-1/2 md:w3/4 h-32 bg-blue absolute right-0 top-0 z-[-1]" />
             <p className="mt-10">
               I hold a MIT xPro Professional Certificate in Coding: Full Stack
-              Development with MERN (MongoDB, Express, React and NodeJS)
-              completed on March 2023.
+              Development with MERN (MongoDB, Express, React and NodeJS).
             </p>
           </div>
         </motion.div>
